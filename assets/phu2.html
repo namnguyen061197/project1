@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="./css/common/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/common/owl.theme.default.min.css">
+    <!-- --css grid-- -->
+	<link rel="stylesheet" type="text/css" href="./css/common/_grid.css">
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="./css/pages/fashion2/style2.css">
+    <style>
+        .banner-z {
+            width: 100%;
+            margin: 60px 0;
+            height: 600px;
+            background-image: url('./images2/banner7.jpg');
+            display: flex;
+            align-items: center;
+        }
+        .banner-container__content {
+            animation: showDown 3s;
+        }
+        @keyframes showDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        @keyframes showUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .large-font {
+            font-size: 70px;
+            font-weight: 700;
+        }
+        .text {
+            max-width: 60%;
+        }
+
+    .btn_2 .btn-main{
+        padding: 15px 35px;
+        border-radius: 25px;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        transition: all 0.6s ease-in; 
+        animation: showUp 3s;
+    }
+  .btn_2 .btn-main::before {
+        content: '';
+        width: 51%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -5;
+        left: -100%;
+        transition: all 0.6s ease-in; 
+    }
+  .btn_2 .btn-main::after {
+        content: '';
+        width: 51%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -5;
+        right: -100%;
+        transition: all 0.6s ease-in; 
+    }
+    .btn_2 {
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    .btn_2:hover .btn-main::after {
+    right: 0; }
+    .btn_2:hover .btn-main::before {
+    left: 0; }
+
+    .pink-btn {
+  border: 1px solid #fe4a62;
+  color: #fe4a62; }
+  .pink-btn::after {
+    background-color: #fe4a62; }
+  .pink-btn::before {
+    background-color: #fe4a62; }
+
+    .btn_2:hover .pink-btn {
+    color: white; }
+        .large-btn {
+            padding: 15px 40px;
+        }
+        .banner-container {
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+        }
+        .m-20 {
+            margin: 20px 0;
+        }
+        /* ================================ */
+        .dot-out {
+            width: 20px;
+            height: 20px;
+            margin: 20px 100px;
+            background-color: red;
+            outline: 2px solid red;
+            outline-offset: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="dot-out">
+    </div>
+</body>
+</html>
